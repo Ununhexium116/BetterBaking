@@ -1,0 +1,16 @@
+[
+{
+  "modid": "betterbaking",
+  "name": " Better Baking",
+  "description": "A Mod to make baking in Minecraft better.",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Ununhexium116"],
+  "credits": "Ununhexium116",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

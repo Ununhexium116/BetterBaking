@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "betterbaking:flour",
+    "data": 0
+  }
+}
