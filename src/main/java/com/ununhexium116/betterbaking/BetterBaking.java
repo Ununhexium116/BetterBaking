@@ -1,6 +1,7 @@
 package com.ununhexium116.betterbaking;
 
 import com.ununhexium116.betterbaking.init.ModItems;
+import com.ununhexium116.betterbaking.init.ModRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -28,6 +29,7 @@ public class BetterBaking {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
+        ModRecipes.init();
         System.out.println("BetterBaking Initiazlization");
     }
 
