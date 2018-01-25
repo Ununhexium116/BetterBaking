@@ -5,14 +5,11 @@ import com.ununhexium116.betterbaking.items.ItemFlour;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.crafting.IRecipe;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.registries.IForgeRegistryModifiable;
 
 @Mod.EventBusSubscriber(modid = BetterBaking.MODID)
 public class ModItems {
@@ -35,14 +32,5 @@ public class ModItems {
 
     private static void registerRender(Item item) {
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation( item.getRegistryName(), "inventory"));
-    }
-
-    @SubscribeEvent
-    public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-        ResourceLocation bread = new ResourceLocation("minecraft:bread");
-
-        IForgeRegistryModifiable modRegistry = (IForgeRegistryModifiable) event.getRegistry();
-
-        modRegistry.remove(bread);
     }
 }
