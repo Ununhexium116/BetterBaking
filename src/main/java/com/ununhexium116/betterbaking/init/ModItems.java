@@ -1,7 +1,6 @@
 package com.ununhexium116.betterbaking.init;
 
 import com.ununhexium116.betterbaking.BetterBaking;
-import com.ununhexium116.betterbaking.items.ItemBatterBucket;
 import com.ununhexium116.betterbaking.items.ItemDough;
 import com.ununhexium116.betterbaking.items.ItemFlour;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -18,24 +17,21 @@ public class ModItems {
 
     static Item flour;
     static Item dough;
-    static Item batterbucket;
 
     public static void init() {
         flour = new ItemFlour("flour").setCreativeTab(CreativeTabs.FOOD).setMaxStackSize(64);
         dough = new ItemDough("dough").setCreativeTab(CreativeTabs.FOOD).setMaxStackSize(64);
-        batterbucket = new ItemBatterBucket("batter_bucket").setCreativeTab(CreativeTabs.FOOD).setMaxStackSize(1);
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().registerAll(flour, dough, batterbucket);
+        event.getRegistry().registerAll(flour, dough);
     }
 
     @SubscribeEvent
     public static void registerRenders(ModelRegistryEvent event) {
         registerRender(flour);
         registerRender(dough);
-        registerRender(batterbucket);
     }
 
     private static void registerRender(Item item) {
