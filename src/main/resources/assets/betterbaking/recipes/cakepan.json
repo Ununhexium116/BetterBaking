@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III"
+  ],
+  "key": {
+    "I": [
+      {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "betterbaking:cakePan",
+    "data": 0,
+    "count": 3
+  }
+}
