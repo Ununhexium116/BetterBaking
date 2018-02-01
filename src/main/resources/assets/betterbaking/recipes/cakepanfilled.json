@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "betterbaking:flour",
+      "data": 0
+    },
+    {
+      "item": "betterbaking:flour",
+      "data": 0
+    },
+    {
+      "item": "minecraft:sugar",
+      "data": 0
+    },
+    {
+      "item": "minecraft:milk_bucket",
+      "data": 0
+    },
+    {
+      "item": "minecraft:egg",
+      "data": 0
+    },
+    {
+      "item": "betterbaking:cakepan",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "betterbaking:cakepanfilled",
+    "data": 0
+  }
+}

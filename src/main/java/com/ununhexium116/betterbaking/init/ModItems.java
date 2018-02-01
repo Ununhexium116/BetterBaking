@@ -2,6 +2,7 @@ package com.ununhexium116.betterbaking.init;
 
 import com.ununhexium116.betterbaking.BetterBaking;
 import com.ununhexium116.betterbaking.items.ItemCakePan;
+import com.ununhexium116.betterbaking.items.ItemCakePanFilled;
 import com.ununhexium116.betterbaking.items.ItemDough;
 import com.ununhexium116.betterbaking.items.ItemFlour;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -19,16 +20,18 @@ public class ModItems {
     static Item flour;
     static Item dough;
     static Item cakePan;
+    static Item cakePanFilled;
 
     public static void init() {
         flour = new ItemFlour("flour").setCreativeTab(CreativeTabs.FOOD).setMaxStackSize(64);
         dough = new ItemDough("dough").setCreativeTab(CreativeTabs.FOOD).setMaxStackSize(64);
         cakePan = new ItemCakePan("cakePan").setCreativeTab(CreativeTabs.MISC).setMaxStackSize(16);
+        cakePanFilled = new ItemCakePanFilled("cakePanFilled").setCreativeTab(CreativeTabs.MISC).setMaxStackSize(3);
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().registerAll(flour, dough, cakePan);
+        event.getRegistry().registerAll(flour, dough, cakePan, cakePanFilled);
     }
 
     @SubscribeEvent
@@ -36,6 +39,7 @@ public class ModItems {
         registerRender(flour);
         registerRender(dough);
         registerRender(cakePan);
+        registerRender(cakePanFilled);
     }
 
     private static void registerRender(Item item) {
