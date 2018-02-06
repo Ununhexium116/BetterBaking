@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "betterbaking:cakePanFilled",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "betterbaking:cakeLayer",
+    "data": 0
+  }
+}
